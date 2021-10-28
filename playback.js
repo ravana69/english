@@ -1,43 +1,29 @@
 const sources = [
-  "http://rd.shalombeatsradio.com:8006/stream", // Shalom Beats
-  "http://88.198.138.88:8000/jesusradio/;.m3u", // Jesus Radio Malayalam
-  "http://199.195.194.140:8012/stream", // Sehion Radio
-  "http://5.79.88.132:7084/;stream.mp3", // Psalms Radio
-  "https://dreamsiteradiocp2.com/proxy/rmindia1?mp=/stream", // Radio Maria
-  "https://ephphatha.radioca.st/stream?type=http&nocache=15206", // Ephphatha
-  "https://s2.radio.co/sf61790a26/listen", // Malayalam Christian Network
-  "https://stream.radio.co/s1383afdc9/listen?ver=52115", // Shalom
-  "http://live.jesuscomingfm.com:8132/;", // Jesus Coming FM
-  "http://5.79.88.132:7233/;type=mp3", // Gloria Radio Malayalam
-  "https://stream.radio.co/s9015a8e16/listen", // Radio Wind
-  "https://listen.radioking.com/radio/378295/stream/428998", // Tharangam Radio
-  "https://bozztv.com/36bay2/divine-event/tracks-v1a1/mono.m3u8", // DVN Radio
-  "http://66.55.145.43:7704/stream/1/", // Malayalam English Christian Radio
-  "https://gains.reviveradio.net/proxy/rafaradio?mp=/stream", // Rafa Radio
-  "http://radio.zionmediait.com:5327/;", // Kripa FM Bhilai
-  "https://gains.reviveradio.net/proxy/menorah?mp=/stream", // Menorah FM
-  "http://37.187.93.104:8586/stream" // Blessings Radio
+  "http://stream.zeno.fm/v5c2bw72p48uv", // Ravana English
+  "http://titan.shoutca.st:8647/stream", // Theeram Radio
+  "http://199.180.72.2:8015/;", // The Jazz Grove Live
+  "https://ice55.securenetsystems.net/DASH90", // Dash Hip Hop X
+  "https://pureplay.cdnstream1.com/6056_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635389815", // 90's Hit
+  "https://pureplay.cdnstream1.com/6040_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635389891", // 90s Alternative Music
+  "https://pureplay.cdnstream1.com/6034_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635389943", // Alternative Hitz
+  "https://pureplay.cdnstream1.com/6030_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635389983", // Country Hitz
+  "https://pureplay.cdnstream1.com/6038_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635390082", // The Mix – 80s 90s & Todays Hitz!
+  "https://pureplay.cdnstream1.com/6027_128.mp3?listenerId=esAdblock0105954&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635390130", // Hot Hitz – Todays Hitz No Rap
+  "https://pureplay.cdnstream1.com/6025_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635390200" // Top 40 Hitz
 ];
 
 const labels = [
-  [ "Shalom Beats", "http://rd.shalombeatsradio.com:8006/stream"],
-  [ "Jesus Radio Malayalam", "http://88.198.138.88:8000/jesusradio/;.m3u"],
-  [ "Sehion Radio", "http://199.195.194.140:8012/stream"],
-  [ "Psalms Radio", "http://5.79.88.132:7084/;stream.mp3"],
-  [ "Radio Maria", "https://dreamsiteradiocp2.com/proxy/rmindia1?mp=/stream"],
-  [ "Ephphatha", "https://ephphatha.radioca.st/stream?type=http&nocache=15206"],
-  [ "Malayalam Christian Network", "https://s2.radio.co/sf61790a26/listen"],
-  [ "Shalom", "https://stream.radio.co/s1383afdc9/listen?ver=52115"],
-  [ "Jesus Coming FM", "http://live.jesuscomingfm.com:8132/;"],
-  [ "Gloria Radio Malayalam", "http://5.79.88.132:7233/;type=mp3"],
-  [ "Radio Wind", "https://stream.radio.co/s9015a8e16/listen"],
-  [ "Tharangam Radio", "https://listen.radioking.com/radio/378295/stream/428998"],
-  [ "DVN Radio", "https://bozztv.com/36bay2/divine-event/tracks-v1a1/mono.m3u8"],
-  [ "Malayalam English Christian Radio", "http://66.55.145.43:7704/stream/1/"],
-  [ "Rafa Radio", "https://gains.reviveradio.net/proxy/rafaradio?mp=/stream"],
-  [ "Kripa FM Bhilai", "http://radio.zionmediait.com:5327/;"],
-  [ "Menorah FM", "https://gains.reviveradio.net/proxy/menorah?mp=/stream"],
-  [ "Blessings Radio", "http://37.187.93.104:8586/stream"]
+  [ "Ravana English", "http://stream.zeno.fm/v5c2bw72p48uv"],
+  [ "Theeram Radio", "http://titan.shoutca.st:8647/stream"],
+  [ "The Jazz Grove Live", "http://199.180.72.2:8015/;"],
+  [ "Dash Hip Hop X", "https://ice55.securenetsystems.net/DASH90"],
+  [ "90's Hit", "https://pureplay.cdnstream1.com/6056_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635389815"],
+  [ "90s Alternative Music", "https://pureplay.cdnstream1.com/6040_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635389891"],
+  [ "Alternative Hitz", "https://pureplay.cdnstream1.com/6034_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635389943"],
+  [ "Country Hitz", "https://pureplay.cdnstream1.com/6030_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635389983"],
+  [ "The Mix – 80s 90s & Todays Hitz!", "https://pureplay.cdnstream1.com/6038_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635390082"],
+  [ "Hot Hitz – Todays Hitz No Rap", "https://pureplay.cdnstream1.com/6027_128.mp3?listenerId=esAdblock0105954&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635390130"],
+  [ "Top 40 Hitz", "https://pureplay.cdnstream1.com/6025_128.mp3?listenerId=esAdblock0287606&aw_0_1st.playerid=esPlayer&aw_0_1st.skey=1635390200"]
 ];
 
 let playingIndex = 0; // current radio
